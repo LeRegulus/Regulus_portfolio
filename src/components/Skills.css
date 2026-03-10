@@ -1,0 +1,37 @@
+.skills { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.skills__title { font-family: var(--font-main); font-size: clamp(30px,4vw,50px); font-weight: 800; margin-bottom: 40px; }
+
+.skills__marquee { overflow: hidden; margin-bottom: 56px; mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); }
+.skills__track { display: flex; gap: 10px; width: max-content; animation: wave 22s linear infinite; }
+.skills__chip {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 100px; padding: 8px 18px;
+  font-family: var(--font-mono); font-size: 12px; color: var(--muted);
+  white-space: nowrap; flex-shrink: 0; transition: border-color 0.2s;
+}
+.chip-dot { width: 5px; height: 5px; background: var(--cyan); border-radius: 50%; box-shadow: 0 0 6px var(--cyan); }
+
+.skills__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.skill-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 16px; padding: 28px;
+  display: flex; flex-direction: column; gap: 18px;
+  transition: border-color 0.3s;
+}
+.skill-card:hover { border-color: var(--gc, var(--cyan)); }
+
+.skill-card__head { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+.skill-card__icon { font-size: 28px; }
+.skill-card__cat { font-family: var(--font-main); font-size: 17px; font-weight: 700; color: var(--gc, var(--cyan)); }
+
+.skill-bar { display: flex; flex-direction: column; gap: 7px; }
+.skill-bar__meta { display: flex; justify-content: space-between; }
+.skill-bar__name { font-size: 13px; color: var(--muted); }
+.skill-bar__pct { font-family: var(--font-mono); font-size: 12px; color: var(--gc, var(--cyan)); font-weight: 600; }
+.skill-bar__track { height: 3px; background: var(--surface2); border-radius: 100px; overflow: hidden; }
+.skill-bar__fill { height: 100%; border-radius: 100px; box-shadow: 0 0 8px currentColor; transition: width 1s ease; }
+
+@media (max-width: 768px) { .skills__grid { grid-template-columns: 1fr; } }

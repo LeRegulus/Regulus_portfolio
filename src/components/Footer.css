@@ -1,0 +1,15 @@
+.footer { background: var(--bg); border-top: 1px solid var(--border); position: relative; padding: 28px 0; }
+.footer__wave {
+  position: absolute; top: -30px; left: 0; right: 0; height: 30px; overflow: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 30'%3E%3Cpath fill='%23020c18' d='M0,15 C360,30 720,0 1080,15 C1260,22 1350,8 1440,15 L1440,30 L0,30 Z'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+.footer__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer__logo { font-family: var(--font-main); font-size: 18px; font-weight: 800; display: flex; align-items: center; gap: 1px; }
+.flb { color: var(--cyan); font-size: 16px; }
+.fln { background: var(--grad2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.1em; }
+.footer__copy { font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+.heart { color: #f43f5e; }
+.footer__socials { display: flex; gap: 12px; }
+.footer__social { font-size: 20px; transition: transform 0.2s; display: inline-block; }
+.footer__social:hover { transform: scale(1.2) translateY(-2px); }
