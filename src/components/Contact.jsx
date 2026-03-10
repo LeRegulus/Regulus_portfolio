@@ -11,7 +11,12 @@ export default function Contact() {
   const submit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1200)); // Remplacer par vraie API (Formspree, EmailJS)
+    // await new Promise(r => setTimeout(r, 1200)); // Remplacer par vraie API (Formspree, EmailJS)
+    await fetch('https://formspree.io/f/xjgayljr', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
     setLoading(false);
     setSent(true);
   };

@@ -52,7 +52,7 @@ export default function Navbar() {
         </ul>
 
         {/* CTA */}
-        <a href="/cv.pdf" download className="btn btn-outline nav__cta">
+        <a href="/CV_Papa_Alassane_SECK_Dev_FullStack_Java.pdf" download className="btn btn-outline nav__cta">
           Télécharger CV
         </a>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
               {label}
             </button>
           ))}
-          <a href="/cv.pdf" download className="btn btn-cyan" style={{ marginTop: 8, justifyContent: 'center' }}>
+          <a href="/CV_Papa_Alassane_SECK_Dev_FullStack_Java.pdf" download className="btn btn-cyan" style={{ marginTop: 8, justifyContent: 'center' }}>
             Télécharger CV
           </a>
         </div>
