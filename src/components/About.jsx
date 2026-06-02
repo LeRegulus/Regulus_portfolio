@@ -20,7 +20,7 @@ export default function About() {
             <div className="about__img-deco deco-br" />
             <div className="about__img-box">
               <img
-                src="/profile.jpg"
+                src="/profil1.PNG"
                 alt="À propos"
                 className="about__img"
                 onError={e => {
