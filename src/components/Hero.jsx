@@ -108,7 +108,7 @@ export default function Hero() {
               </div>
             ) : (
               <img
-                src="/profile.jpg"
+                src={`${process.env.PUBLIC_URL}/profile.jpg`}
                 alt="Papa Alassane SECK"
                 className="hero__photo"
                 onError={() => setImgErr(true)}

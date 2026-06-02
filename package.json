@@ -1,6 +1,7 @@
 {
   "name": "regulus-portfolio-v2",
   "version": "1.0.0",
+  "homepage": "/theRegulus",
   "private": true,
   "dependencies": {
     "@formspree/react": "^3.0.0",
